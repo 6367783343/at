@@ -1,0 +1,16 @@
+/*
+  使用即同意：该脚本产生的一切后果作者本人概不承担且未经作者许可禁止传播
+  js脚本
+  到一个偏僻动态/视频下按F12并进入Console(这里作者使用的是Chrome浏览器)
+  复制以下代码并Enter
+  刷新(F5)停止
+*/
+inter = 6500;       //6500ms延迟
+str = "@海绵宝宝藏獒儿 "; //双引号内为评(sao)论(rao)内(dui)容(xiang)
+var fun = () => {
+    id = "ID:" + Math.floor(Math.random() * 1000);//随机三位数
+    document.getElementsByClassName("ipt-txt")[0].value = id + '\n' + str;//填入输入框
+    document.getElementsByClassName('comment-submit')[0].click();//点击发送
+    
+};
+setInterval(fun, inter);
